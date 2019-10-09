@@ -12,3 +12,188 @@ body {
 	background-size: 80%;
 	background-attachment: fixed;
 }
+.content {
+	background: #fff;
+	width: 80%;
+	min-height: 60%;
+	padding: 2%;
+	position: relative;
+	display: inline-block;
+	margin: 7.99%;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	border-radius: 5px;
+	animation: 1s ease 6s normal forwards 1 fadein;
+	-webkit-animation: 1s ease 6s normal forwards 1 fadein;
+	opacity: 0;
+}
+.waves-effect.waves-grey .waves-ripple {
+	/* The alpha value allows the text and background color
+ of the button to still show through. */
+	background-color: grey;
+}
+/* label color */
+
+.input-field label {
+	color: #000;
+}
+/* label focus color */
+
+.input-field input[type=text]:focus + label {
+	color: #000 !important;
+}
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
+}
+/* valid color */
+
+.input-field input[type=text].valid {
+	border-bottom: 1px solid #000;
+	box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+
+.input-field input[type=text].invalid {
+	border-bottom: 1px solid #000;
+	box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+	color: #000 !important;
+}
+.input-field input[type=text]:focus + label {
+	color: #000 !important;
+}
+.input-field input[type=email]:focus + label {
+	color: #000 !important;
+}
+/* label underline focus color */
+
+.input-field input[type=email]:focus {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
+}
+/* valid color */
+
+.input-field input[type=email].valid {
+	border-bottom: 1px solid #000;
+	box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=tel]:focus + label {
+	color: #000 !important;
+}
+/* label underline focus color */
+
+.input-field input[type=tel]:focus {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
+}
+/* valid color */
+
+.input-field input[type=tel].valid {
+	border-bottom: 1px solid #000;
+	box-shadow: 0 1px 0 0 #000;
+}
+@keyframes fadein {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+.flicker-slow {
+	animation: flicker 3s linear infinite;
+}
+.flicker-medium {
+	animation: flicker 2s linear infinite;
+}
+.flicker-fast {
+	animation: flicker 1s linear infinite;
+}
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		//text-shadow: none;
+		opacity: .99;
+	}
+	20%,
+	21.999%,
+	63%,
+	63.999%,
+	65%,
+	69.999% {
+		opacity: 0.4;
+	}
+}
+/* Media Queries */
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+	body {
+		background-size: 400px;
+	}
+}
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	body {
+		background-size: 50%;
+	}
+}
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	body {
+		background-size: 50%;
+	}
+}
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	body {
+		background-size: 50%;
+	}
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	body {
+		background-size: 50%;
+	}
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	//CSS
+
+}
