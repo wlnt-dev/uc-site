@@ -1,0 +1,14 @@
+html,
+body {
+	height: 100%
+}
+body {
+	background-color: #000 !important;
+	background-size: cover;
+	margin: 0;
+	background-image: url("https://i.imgur.com/6BY38U6.jpg");
+	background-repeat: no-repeat;
+	background-position: center 5%;
+	background-size: 80%;
+	background-attachment: fixed;
+}
